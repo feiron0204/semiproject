@@ -131,11 +131,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <iframe class="position-relative rounded w-100 h-100"
+                <div class="col-lg-4 col-md-6 wow fadeInUp" id="map" data-wow-delay="0.3s">
+                    <!-- <iframe class="position-relative rounded w-100 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37.4987586,127.028042,17z!2d37.4987586!3d127.028042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
                         frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                        tabindex="0"></iframe> -->
+                        
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <form id="frm" class="gform" method="post" data-email="dljtdgh@konkuk.ac.kr" action="https://script.google.com/macros/s/AKfycbwEHMI2YiDBxkB_YbhN4UsXdMfCQD26dT5gstE-d8d0P21Fq4tG37fBamYQt9fUW6vm/exec">
@@ -271,6 +272,16 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16280b2ff75bc611cf6f95bb6dfa9a49"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.50736, 127.034435),
+			level: 3
+		};
+        
+		var map = new kakao.maps.Map(container, options);
+	</script>
     <!-- <script>
         const frm=document.getElementById("frm");
         frm.addEventListener('submit', function(event) {
@@ -280,7 +291,7 @@
     </script> -->
     <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-    
+
 <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
