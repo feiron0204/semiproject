@@ -447,7 +447,16 @@
 }
 
 .video{
+    width:100%;
     transition : all ease .5s;
+}
+
+.video2{
+    width:50%;
+}
+
+.full{
+    width:100%;
 }
 
 .tomato{

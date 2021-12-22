@@ -1,4 +1,5 @@
 const videos = document.querySelectorAll(".video");//class가 video인 객체 전부를 받아옴
+const videos2 = document.querySelectorAll(".video2");
 
         function fullScreen(e){
             const video = e.target;//선택된(focused) video 지정
@@ -50,10 +51,21 @@ const videos = document.querySelectorAll(".video");//class가 video인 객체 �
                 return;
             }
         }
+        function focusfullscreen(e){
+            e.target.classList.toggle("full");
+        }
+        function colorChange(){
+            document.body.classList.toggle("tomato");
+        }
 
-            //add Event Lister"s"
-            for(let i=0;i<videos.length;i++){
+        //add Event Lister"s"
+        for(let i=0;i<videos.length;i++){
             videos[i].addEventListener("keypress",fullScreen);
             videos[i].addEventListener("play", onlyOnePlay);
             videos[i].addEventListener("keydown",volumeAndTime);
-            }
+        }
+        for (let i = 0; i < videos2.length; i++) {
+            videos2[i].addEventListener("click",focusfullscreen);
+            videos2[i].addEventListener("play", colorChange);
+            videos2[i].addEventListener("pause", colorChange);
+        }
