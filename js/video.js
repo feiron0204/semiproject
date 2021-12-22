@@ -59,17 +59,7 @@ const videos2 = document.querySelectorAll(".video2");
             }
         }
         function sizeChange(e){
-            const video = e.target;
-            const paused = video.paused;
-
-            //마우스 클릭도 재생/정지를 하기 때문에 그걸 막으려고 아까 전체화면에서의 코드 가져옴
-            if(paused){                 
-                video.play();
-            }
-            else{
-                video.pause();
-            }
-
+            e.preventDefault();
             e.target.classList.toggle("full");
         }
         function colorChange(){
