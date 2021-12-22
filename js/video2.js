@@ -1,4 +1,4 @@
-const video = document.querySelector(".video2");
+const videos2 = document.querySelectorAll(".video2");
 
 function focusfullscreen(e){
     if (e.target.width == 1000){
@@ -7,5 +7,12 @@ function focusfullscreen(e){
         e.target.width = 1000;
     }
 }
+function colorChange(){
+    document.body.classList.toggle("tomato");
+}
 
-video.addEventListener("click",focusfullscreen);
+for (let i = 0; i < videos2.length; i++) {
+videos2[i].addEventListener("click",focusfullscreen);
+videos2[i].addEventListener("play", colorChange);
+videos2[i].addEventListener("pause", colorChange);
+}

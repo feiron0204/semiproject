@@ -445,3 +445,11 @@
     padding-right: 0;
     border-right: none;
 }
+
+.video{
+    transition : all ease .5s;
+}
+
+.tomato{
+    background-color: tomato;
+}
