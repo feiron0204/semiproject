@@ -75,7 +75,7 @@ const videos2 = document.querySelectorAll(".video2");
             video.addEventListener("keydown",volumeAndTime);
         }
         for (let i = 0; i < videos2.length; i++) {            
-            const video = videos[i];
+            const video = videos2[i];
             video.addEventListener("click",sizeChange);
             video.addEventListener("play", colorChange);
             video.addEventListener("pause", colorChange);
