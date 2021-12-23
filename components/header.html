@@ -1,0 +1,29 @@
+<script>
+  if (location.pathname == "/pages/Video.html") {
+    document.getElementById("first").innerHTML = "HTML Video";
+    document.getElementById("second").innerHTML = "Theory";
+    document.getElementById("third").innerHTML = "Example";
+    document.getElementById("fourth").innerHTML = "Video";
+  } else if (location.pathname == "/pages/Audio.html") {
+    document.getElementById("first").innerHTML = "HTML Audio";
+    document.getElementById("second").innerHTML = "Theory";
+    document.getElementById("third").innerHTML = "Example";
+    document.getElementById("fourth").innerHTML = "Audio";
+  }
+</script>
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h1 class="display-3 text-white animated slideInDown" id="first">Contact</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a class="text-white" id="second" href="#">Home</a></li>
+            <li class="breadcrumb-item"><a class="text-white" id="third" href="#">Pages</a></li>
+            <li class="breadcrumb-item text-white active" id="fourth" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

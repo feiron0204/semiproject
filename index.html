@@ -1,142 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Team 1. About us and HTML media</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#navs").load("components/nav.html");
+        $("#footers").load("components/footer.html");
+      });
+    </script>
+  </head>
 
-    
-</head>
-
-<body>
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>1조 프론트재밋다</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <!-- <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a> -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">HTML Media</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <!-- <a href="team.html" class="dropdown-item">Our Team</a> -->
-                        <a href="Video.html" class="dropdown-item">Video</a>
-                        <a href="Audio.html" class="dropdown-item">Audio</a>
-                    </div>
-                </div>
-                <!-- <a href="boardGame.html" class="nav-item nav-link">Board</a> -->
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="https://cafe.naver.com/bitcamp215" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
-                    class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
+    <div id="navs"></div>
     <!-- Navbar End -->
-
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">team No.1 
-                                </h5>
-                                <h1 class="display-3 text-white animated slideInDown">The Best HTML Video Learning Platform
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">재생만 되는 비디오는 싫다! 본격 실용성 가득한 동영상 첨부방법!!!</p>
-                                <a href="Video.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn to video</a>
-                                <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, 0.7)">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-sm-10 col-lg-8">
+                  <h5 class="text-primary text-uppercase mb-3 animated slideInDown">team No.1</h5>
+                  <h1 class="display-3 text-white animated slideInDown">The Best HTML Video Learning Platform</h1>
+                  <p class="fs-5 text-white mb-4 pb-2">재생만 되는 비디오는 싫다! 본격 실용성 가득한 동영상 첨부방법!!!</p>
+                  <a href="pages/Video.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn to video</a>
+                  <a href="pages/contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                 </div>
+              </div>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">team No.1
-                                </h5>
-                                <h1 class="display-3 text-white animated slideInDown">The Best HTML Audio Learning Platform
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">에이 노래만나오면 그게 오디온가 적어도 이렇겐 되야 오디오지</p>
-                                <a href="Audio.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn to Audeo</a>
-                                <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, 0.7)">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-sm-10 col-lg-8">
+                  <h5 class="text-primary text-uppercase mb-3 animated slideInDown">team No.1</h5>
+                  <h1 class="display-3 text-white animated slideInDown">The Best HTML Audio Learning Platform</h1>
+                  <p class="fs-5 text-white mb-4 pb-2">에이 노래만나오면 그게 오디온가 적어도 이렇겐 되야 오디오지</p>
+                  <a href="pages/Audio.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn to Audeo</a>
+                  <a href="pages/contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Carousel End -->
 
-
-<!-- The Modal -->
-<div class="modal" id="myModal1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" >
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header  ">
+    <!-- The Modal -->
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
             <div></div>
-          <h4 class="modal-title">손찬우</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px;"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
+            <h4 class="modal-title">손찬우</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
             <pre>
                 배도,,,출출허니,,기름에,,,튀긴게,,,먹고싶어서리ㅎㅎㅎ;;;;
                 근처,,분식집에,,,,가서,,,경양식으루다가,,,맨든,,돈까스,,,한넘,,,
@@ -150,182 +115,117 @@
                 까칠허게,,,굴던,,,김말자,,,
                 스##아,,,그래두,,,난,,너밖에,,,없다!!^^
             </pre>
-            
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
       </div>
     </div>
-  </div>
-  
-  <!-- The Modal -->
-<div class="modal" id="myModal2">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" >
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
             <div></div>
-          <h4 class="modal-title">김진욱</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px;"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
+            <h4 class="modal-title">김진욱</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
             <pre>
                 - 안녕하세요!  백엔드 개발자가 되고 싶은 김진욱입니다.
                 - 무엇보다도 꾸준함의 진짜 가치를 알기에 
                   1일 1커밋 운동과 기술 블로그 운영을 하기 위해 노력중입니다.
                 - Clean Code와 Test에 대한 고민을 생활화합니다.
             </pre>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-  <!-- The Modal -->
-<div class="modal" id="myModal3">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" >
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
+          </div>
 
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          규희아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          ㅍ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-          아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
       </div>
     </div>
-  </div>
-  <!-- The Modal -->
-<div class="modal" id="myModal4">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" >
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
+    <!-- The Modal -->
+    <div class="modal" id="myModal4">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
             <div></div>
-          <h4 class="modal-title">Minsu cho</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            I stand here today humbled by the task before us, grateful for the trust you have bestowed, mindful of the sacrifices borne by our ancestors. I thank President Bush for his service to our nation, as well as the generosity and cooperation he has shown throughout this transition.
+            <h4 class="modal-title">Minsu cho</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
 
-            Forty-four Americans have now taken the presidential oath. The words have been spoken during rising tides of prosperity and the still waters of peace. Yet, every so often the oath is taken amidst gathering clouds and raging storms. At these moments, America has carried on not simply because of the skill or vision of those in high office, but because We the People have remained faithful to the ideals of our forbearers, and true to our founding documents.
-            
-            So it has been. So it must be with this generation of Americans.
-            
-            That we are in the midst of crisis is now well understood. Our nation is at war, against a far-reaching network of violence and hatred. Our economy is badly weakened, a consequence of greed and irresponsibility on the part of some, but also our collective failure to make hard choices and prepare the nation for a new age. Homes have been lost; jobs shed; businesses shuttered. Our health care is too costly; our schools fail too many; and each day brings further evidence that the ways we use energy strengthen our adversaries and threaten our planet.
-         
+          <!-- Modal body -->
+          <div class="modal-body">
+            I stand here today humbled by the task before us, grateful for the trust you have bestowed, mindful of the sacrifices borne by our ancestors. I thank President Bush for his service to our nation, as well as the generosity and cooperation
+            he has shown throughout this transition. Forty-four Americans have now taken the presidential oath. The words have been spoken during rising tides of prosperity and the still waters of peace. Yet, every so often the oath is taken amidst
+            gathering clouds and raging storms. At these moments, America has carried on not simply because of the skill or vision of those in high office, but because We the People have remained faithful to the ideals of our forbearers, and true to
+            our founding documents. So it has been. So it must be with this generation of Americans. That we are in the midst of crisis is now well understood. Our nation is at war, against a far-reaching network of violence and hatred. Our economy
+            is badly weakened, a consequence of greed and irresponsibility on the part of some, but also our collective failure to make hard choices and prepare the nation for a new age. Homes have been lost; jobs shed; businesses shuttered. Our
+            health care is too costly; our schools fail too many; and each day brings further evidence that the ways we use energy strengthen our adversaries and threaten our planet.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
       </div>
     </div>
-  </div>
-  <!-- The Modal -->
-<div class="modal" id="myModal5">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" >
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
+    <!-- The Modal -->
+    <div class="modal" id="myModal5">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
             <div></div>
-          <h4 class="modal-title">어흐헝</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px;"></button>
+            <h4 class="modal-title">어흐헝</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            1993년 2월 4일 새벽 1시 52분 1남1녀의 유복한 가정에서 태어나 서울에서 큰 울음소리와 함께 인생을 시작했던 그아이는 태어날때부터 무거운 몸무게를 자랑하며 보는이로 하여금 감탄을 금치못하게 하였던 그아이는 어린이집에서 친구들을 조우하고
+            온동네를 샅샅히 뛰어다녔고 어린이 과학상자와 가오가이거 합체로봇을 가지고놀며 삶의 즐거움을 느끼며 희희낙락한 하루하루를 즐기고있던 어느날 그 아이는 뒷골목에서 갑자기 뛰쳐나온 개를보고 놀라 뒤로 넘어져 뒤통수를 7바늘 꿰맸으며 그와중에
+            신발떨어트렷다고 엉엉울기도 하였지만 무럭무럭자라나어 중학교때는 괜히 꿈만커져서 과학고에 진학하고싶다고해서 학원생활을 아침부터 새벽까지 오지게돌려지다 학업에대한 즐거움이 없어질때쯤 과고에 떨어지고 그냥 일반고등학교생활을 시작하게되었다
+            그후 대학진학을 위해 공부는 무슨 피씨방 죽돌이로 매일 10시까지 놀며 피씨방 사람들과 인맥을 쌓기 시작했고 가끔은 알바도 뛰고 본체수리도하면서 수능날 제일 자신있던 과목을 밀려써서 인생 망했다고 생각할때쯔음 논술이라는 변수로 은근히 집과
+            가까운 대학에 들어가게 되었으며 처음 2년동안 북치고장구치는 풍물동아리에 갔더니만 맨날 막걸리나마시고 식도로내려가는 막걸리마냥 성적도 내려가고 대학교에큰 호수하나있는데 거기에 빠질번도했지만 2년무사히 아무일없이 군대에 진학?하게되었고
+            155M 견인포 부대에 끌려가서 무슨 옮길때도 5t트럭에 매달고 옮기는 포가 이름이왜 견인포인지 몰랐는데 사람 6명이서도 들수 있음을 몸소 체험하며 무사히 전역하고 학교에 복학했을때는 몸도 마음도 머리도 깨끗해진 상태라 뭘해야할지 모르던찰나
+            문에붙어있는 연구생알바구함이라는 글을보고 저기에 전화나해볼까 했다가 그뒤로 4년동안 교수님밑에서 무슨 노예마냥 다른나라로 팔려도가보고 밤새실험시키고나쁜사람.. 암튼 그것도 어찌저찌 흘러가다보니 석사까지하고 졸업을 하고났는데 날
+            받아주는이 울집말곤 아무데도 없던터라 이런저런 알바를 하며 허송세월 낭비중에 그래도 코딩이 재밌엇지라는 추억하나로 여기에왔는데 지금 사람들이 너무 나잘한다고 부담주고 비행기태우고 진짜 내가뭐라고 자꾸 뭐 배우고왓냐고 이프로그램아냐고
+            물어보는데 진짜 1도모르겠고 난 끝나고나서 뭐할지 정하지도 못했는데 계속 끝나고 뭐하냐고 물어보고 아무튼 근데 잘한다잘한다하니까 뭔가 입꼬리는 숨김수없는 이마음 뭔지내게말해줘 사랑일ㄲ.. 모달창어디까지가는지 보고싶어서 계속쓰는데 이게
+            어디까지 내려가는지 궁금하기도하고 근데 아무내용없이 아아아앙로채울순 없으니까 인생을적다보니 벌써 여기까지 왔네요
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          1993년 2월 4일 새벽 1시 52분 1남1녀의 유복한 가정에서 태어나 서울에서 큰 울음소리와 함께 인생을 시작했던 그아이는 태어날때부터 무거운 몸무게를 자랑하며
-          보는이로 하여금 감탄을 금치못하게 하였던 그아이는 어린이집에서 친구들을 조우하고 온동네를 샅샅히 뛰어다녔고 어린이 과학상자와 가오가이거
-          합체로봇을 가지고놀며 삶의 즐거움을 느끼며 희희낙락한 하루하루를 즐기고있던 어느날 그 아이는 뒷골목에서 갑자기 뛰쳐나온 개를보고 놀라 
-          뒤로 넘어져 뒤통수를 7바늘 꿰맸으며 그와중에 신발떨어트렷다고 엉엉울기도 하였지만 무럭무럭자라나어 중학교때는 괜히 꿈만커져서 과학고에
-          진학하고싶다고해서 학원생활을 아침부터 새벽까지 오지게돌려지다 학업에대한 즐거움이 없어질때쯤 과고에 떨어지고 그냥 일반고등학교생활을
-          시작하게되었다 그후 대학진학을 위해 공부는 무슨 피씨방 죽돌이로 매일 10시까지 놀며 피씨방 사람들과 인맥을 쌓기 시작했고 가끔은 알바도
-          뛰고 본체수리도하면서 수능날 제일 자신있던 과목을 밀려써서 인생 망했다고 생각할때쯔음 논술이라는 변수로 은근히 집과 가까운 대학에 들어가게
-          되었으며 처음 2년동안 북치고장구치는 풍물동아리에 갔더니만 맨날 막걸리나마시고 식도로내려가는 막걸리마냥 성적도 내려가고 대학교에큰 호수하나있는데
-          거기에 빠질번도했지만 2년무사히 아무일없이 군대에 진학?하게되었고 155M 견인포 부대에 끌려가서 무슨 옮길때도 5t트럭에 매달고 옮기는 포가
-          이름이왜 견인포인지 몰랐는데 사람 6명이서도 들수 있음을 몸소 체험하며 무사히 전역하고 학교에 복학했을때는 몸도 마음도 머리도 깨끗해진 상태라
-          뭘해야할지 모르던찰나 문에붙어있는 연구생알바구함이라는 글을보고 저기에 전화나해볼까 했다가 그뒤로 4년동안 교수님밑에서 무슨 노예마냥
-          다른나라로 팔려도가보고 밤새실험시키고나쁜사람.. 암튼 그것도 어찌저찌 흘러가다보니 석사까지하고 졸업을 하고났는데 날 받아주는이 울집말곤 아무데도
-          없던터라 이런저런 알바를 하며 허송세월 낭비중에 그래도 코딩이 재밌엇지라는 추억하나로 여기에왔는데 지금 사람들이 너무 나잘한다고 부담주고 비행기태우고
-          진짜 내가뭐라고 자꾸 뭐 배우고왓냐고 이프로그램아냐고 물어보는데 진짜 1도모르겠고 난 끝나고나서 뭐할지 정하지도 못했는데 계속 끝나고 뭐하냐고
-          물어보고 아무튼 근데 잘한다잘한다하니까 뭔가 입꼬리는 숨김수없는 이마음 뭔지내게말해줘 사랑일ㄲ.. 모달창어디까지가는지 보고싶어서 계속쓰는데 이게
-          어디까지 내려가는지 궁금하기도하고 근데 아무내용없이 아아아앙로채울순 없으니까 인생을적다보니 벌써 여기까지 왔네요  
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
       </div>
     </div>
-  </div>
-  <!-- The Modal -->
-<div class="modal" id="myModal6">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" >
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
+    <!-- The Modal -->
+    <div class="modal" id="myModal6">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
             <div></div>
-          <h4 class="modal-title">Z1존서림11</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px;"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
+            <h4 class="modal-title">Z1존서림11</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-left: -8px"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
             <pre>
             직업 마법사
             성별 남
@@ -351,237 +251,124 @@
             신뢰도550/1000
             스트레스 444/1000
             </pre>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
       </div>
     </div>
-  </div>
     <!-- Team Start -->
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Expert Instructors</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden ">
-                            <img class="img-fluid" src="img/CW.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal1"><i
-                                        class="far fa-list-alt"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" ><i class="fas fa-basketball-ball"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" target="_blank"  href="https://github.com/sonchanwoo"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">찬우</h5>
-                            <small>다수의경험</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden ">
-                            <img class="img-fluid" src="img/JW.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal2"><i
-                                        class="far fa-list-alt"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" ><i class="fas fa-film"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" target="_blank"  href="https://github.com/kimjinwook1/"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">진욱</h5>
-                            <small>화내지마;</small>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden ">
-                            <img class="img-fluid" src="img/KH.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal3"><i
-                                        class="far fa-list-alt"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class=""></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" target="_blank"  href=""><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">규희</h5>
-                            <small>가수</small>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s" >
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden ">
-                            <img class="img-fluid" src="img/MS.jpg" alt="" >
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal4"><i
-                                        class="far fa-list-alt"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" ><i class="fas fa-guitar"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" target="_blank"  href="https://github.com/ncms0820"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">민수</h5>
-                            <small>언럭키한경..?</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden " >
-                            <img class="img-fluid "  src="img/SH.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal5"><i
-                                        class="far fa-list-alt"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" ><i class="fas fa-beer"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" target="_blank" href="https://github.com/feiron0204/BitCamp"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">성호</h5>
-                            <small>이대표</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden ">
-                            <img class="img-fluid" src="img/SR.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal6"><i
-                                        class="far fa-list-alt"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" ><i class="fas fa-cannabis"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" target="_blank"  href="https://github.com/yunseorim1116"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">서림</h5>
-                            <small>재능충</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
+          <h1 class="mb-5">Expert Instructors</h1>
         </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/CW.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal1"><i class="far fa-list-alt"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1"><i class="fas fa-basketball-ball"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" target="_blank" href="https://github.com/sonchanwoo"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">찬우</h5>
+                <small>다수의경험</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/JW.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal2"><i class="far fa-list-alt"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1"><i class="fas fa-film"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" target="_blank" href="https://github.com/kimjinwook1/"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">진욱</h5>
+                <small>화내지마;</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/MS.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal4"><i class="far fa-list-alt"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1"><i class="fas fa-guitar"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" target="_blank" href="https://github.com/ncms0820"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">민수</h5>
+                <small>언럭키한경..?</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/SH.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal5"><i class="far fa-list-alt"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1"><i class="fas fa-beer"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" target="_blank" href="https://github.com/feiron0204/BitCamp"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">성호</h5>
+                <small>이대표</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/SR.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                  <a class="btn btn-sm-square btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#myModal6"><i class="far fa-list-alt"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1"><i class="fas fa-cannabis"></i></a>
+                  <a class="btn btn-sm-square btn-primary mx-1" target="_blank" href="https://github.com/yunseorim1116"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">서림</h5>
+                <small>재능충</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Team End -->
 
-
-
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="index.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <!-- <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a> -->
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Samo Building, 20, Gangnam-daero 94-gil, Gangnam-gu, Seoul</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>010-7356-9695</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>dltjdgh@Konkuk.ac.kr</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" target="_blank" href="http://cafe.naver.com/bitcamp215"><i class="fas fa-coffee"></i></a>
-                        <a class="btn btn-outline-light btn-social" target="_blank" href="https://github.com/feiron0204/semiproject"><i class="fab fa-github"></i></a>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4" style="height: 6rem;">
-                            <img class="img-fluid bg-light p-1" style="width:100% ; height: 100%;" src="img/course-1.jpg" alt="">
-                        </div>
-                        <div class="col-4"style="height: 6rem;">
-                            <img class="img-fluid bg-light p-1" style="width:100% ; height: 100%;"src="img/course-5.gif" alt="">
-                        </div>
-                        <div class="col-4"style="height: 6rem;">
-                            <img class="img-fluid bg-light p-1" style="width:100% ; height: 100%;"src="img/course-3.jpg" alt="">
-                        </div>
-                        <div class="col-4"style="height: 6rem;">
-                            <img class="img-fluid bg-light p-1"style="width:100% ; height: 100%;" src="img/course-4.gif" alt="">
-                        </div>
-                        <div class="col-4"style="height: 6rem;">
-                            <img class="img-fluid bg-light p-1" style="width:100% ; height: 100%;"src="img/course-2.jpg" alt="">
-                        </div>
-                        <div class="col-4"style="height: 6rem;">
-                            <img class="img-fluid bg-light p-1" style="width:100% ; height: 100%;"src="img/course-6.gif" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Fun Front</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="index.html">Home</a>
-                            <!-- <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footers"></div>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -593,6 +380,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
