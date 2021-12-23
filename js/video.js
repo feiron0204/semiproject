@@ -15,7 +15,7 @@ const videos2 = document.querySelectorAll(".video2");
                 if(paused){                 
                     video.play();
                 }
-                else{//불가피
+                else{
                     video.pause();
                 }            
                 
@@ -69,12 +69,14 @@ const videos2 = document.querySelectorAll(".video2");
 
         //add Event Lister"s"
         for(let i=0;i<videos.length;i++){
-            videos[i].addEventListener("keypress",fullScreen);
-            videos[i].addEventListener("play", onlyOnePlay);
-            videos[i].addEventListener("keydown",volumeAndTime);
+            const video = videos[i];
+            video.addEventListener("keypress",fullScreen);
+            video.addEventListener("play", onlyOnePlay);
+            video.addEventListener("keydown",volumeAndTime);
         }
-        for (let i = 0; i < videos2.length; i++) {
-            videos2[i].addEventListener("click",sizeChange);
-            videos2[i].addEventListener("play", colorChange);
-            videos2[i].addEventListener("pause", colorChange);
+        for (let i = 0; i < videos2.length; i++) {            
+            const video = videos[i];
+            video.addEventListener("click",sizeChange);
+            video.addEventListener("play", colorChange);
+            video.addEventListener("pause", colorChange);
         }
